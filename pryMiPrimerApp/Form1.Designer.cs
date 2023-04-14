@@ -29,7 +29,6 @@ namespace pryMiPrimerApp
         /// </summary>
         private void InitializeComponent()
         {
-            this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.labe1 = new System.Windows.Forms.Label();
             this.texdeposito = new System.Windows.Forms.TextBox();
@@ -44,24 +43,14 @@ namespace pryMiPrimerApp
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(110, 373);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(0, 22);
-            this.label2.TabIndex = 2;
-            this.label2.Click += new System.EventHandler(this.label2_Click);
-            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.texdeposito);
             this.groupBox1.Controls.Add(this.labe1);
             this.groupBox1.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(31, 12);
+            this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(303, 140);
+            this.groupBox1.Size = new System.Drawing.Size(278, 109);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "iNGRESOS ";
@@ -70,7 +59,7 @@ namespace pryMiPrimerApp
             // labe1
             // 
             this.labe1.AutoSize = true;
-            this.labe1.Location = new System.Drawing.Point(46, 54);
+            this.labe1.Location = new System.Drawing.Point(20, 49);
             this.labe1.Name = "labe1";
             this.labe1.Size = new System.Drawing.Size(88, 24);
             this.labe1.TabIndex = 0;
@@ -78,7 +67,7 @@ namespace pryMiPrimerApp
             // 
             // texdeposito
             // 
-            this.texdeposito.Location = new System.Drawing.Point(178, 46);
+            this.texdeposito.Location = new System.Drawing.Point(132, 46);
             this.texdeposito.Name = "texdeposito";
             this.texdeposito.Size = new System.Drawing.Size(100, 32);
             this.texdeposito.TabIndex = 1;
@@ -92,9 +81,9 @@ namespace pryMiPrimerApp
             this.groupBox2.Controls.Add(this.texalquleres);
             this.groupBox2.Controls.Add(this.lblalquileres);
             this.groupBox2.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(31, 179);
+            this.groupBox2.Location = new System.Drawing.Point(12, 127);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(303, 216);
+            this.groupBox2.Size = new System.Drawing.Size(278, 190);
             this.groupBox2.TabIndex = 6;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "GASTOS FIJOS ";
@@ -103,7 +92,7 @@ namespace pryMiPrimerApp
             // 
             this.lblalquileres.AutoSize = true;
             this.lblalquileres.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblalquileres.Location = new System.Drawing.Point(46, 54);
+            this.lblalquileres.Location = new System.Drawing.Point(11, 54);
             this.lblalquileres.Name = "lblalquileres";
             this.lblalquileres.Size = new System.Drawing.Size(97, 22);
             this.lblalquileres.TabIndex = 0;
@@ -111,7 +100,7 @@ namespace pryMiPrimerApp
             // 
             // texalquleres
             // 
-            this.texalquleres.Location = new System.Drawing.Point(178, 54);
+            this.texalquleres.Location = new System.Drawing.Point(132, 49);
             this.texalquleres.Name = "texalquleres";
             this.texalquleres.Size = new System.Drawing.Size(100, 32);
             this.texalquleres.TabIndex = 1;
@@ -120,7 +109,7 @@ namespace pryMiPrimerApp
             // 
             this.lblimpuestos.AutoSize = true;
             this.lblimpuestos.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblimpuestos.Location = new System.Drawing.Point(46, 112);
+            this.lblimpuestos.Location = new System.Drawing.Point(11, 99);
             this.lblimpuestos.Name = "lblimpuestos";
             this.lblimpuestos.Size = new System.Drawing.Size(98, 22);
             this.lblimpuestos.TabIndex = 2;
@@ -129,14 +118,14 @@ namespace pryMiPrimerApp
             // 
             // textimpuestos
             // 
-            this.textimpuestos.Location = new System.Drawing.Point(178, 112);
+            this.textimpuestos.Location = new System.Drawing.Point(132, 94);
             this.textimpuestos.Name = "textimpuestos";
             this.textimpuestos.Size = new System.Drawing.Size(100, 32);
             this.textimpuestos.TabIndex = 3;
             // 
             // textcomida
             // 
-            this.textcomida.Location = new System.Drawing.Point(178, 170);
+            this.textcomida.Location = new System.Drawing.Point(132, 142);
             this.textcomida.Name = "textcomida";
             this.textcomida.Size = new System.Drawing.Size(100, 32);
             this.textcomida.TabIndex = 4;
@@ -144,7 +133,7 @@ namespace pryMiPrimerApp
             // lblcomida
             // 
             this.lblcomida.AutoSize = true;
-            this.lblcomida.Location = new System.Drawing.Point(46, 170);
+            this.lblcomida.Location = new System.Drawing.Point(11, 150);
             this.lblcomida.Name = "lblcomida";
             this.lblcomida.Size = new System.Drawing.Size(75, 24);
             this.lblcomida.TabIndex = 5;
@@ -155,10 +144,9 @@ namespace pryMiPrimerApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(437, 583);
+            this.ClientSize = new System.Drawing.Size(315, 491);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.label2);
             this.Name = "fmrPrincipal";
             this.Text = "Gestiòn De Gastos Mensuales ";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -167,12 +155,10 @@ namespace pryMiPrimerApp
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label labe1;
         private System.Windows.Forms.TextBox texdeposito;
