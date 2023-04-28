@@ -12,13 +12,30 @@ namespace pryMiPrimerApp
 {
     public partial class frmFinanzas : Form
     {
+        public decimal Varimpuestos { get; private set; }
+        public decimal Varsalida { get; private set; }
+        public decimal VarDepocito { get; private set; }
+        public decimal Varcomida { get; private set; }
+        public decimal VArAlquileres { get; private set; }
+
         public frmFinanzas()
         {
             InitializeComponent();
         }
 
         private void Form1_Load(object sender, EventArgs e)
+       
+       
         {
+            //declaracion de Variables Globales 
+            Decimal VarDepocito, VarAlquileres, VarImpuestos, VarComida, varSalida;
+
+            //Inicializar Variables 
+            VarAlquileres = 0;
+            VarImpuestos = 0;
+            VarComida = 0;
+            VarDepocito = 0; 
+            varSalida = 0;
 
         }
 
@@ -50,6 +67,20 @@ namespace pryMiPrimerApp
         private void label4_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void cmdAceptar_Click(object sender, EventArgs e)
+        {
+            Varimpuestos = Convert.ToDecimal(txtAlquleres.Text);
+            VarDepocito = Convert.ToDecimal(txtdeposito.Text);
+            Varcomida = Convert.ToDecimal(txttComida.Text);
+            Varimpuestos = Convert.ToDecimal(txttImpuestos.Text);
+
+            Varsalida = VarDepocito - (Varcomida + Varimpuestos + VArAlquileres);
+
+            //conectar - unir texto 
+
+            lblResultado.Text = "Alquiler: " + VArAlquileres.ToString() + "Depocito:" + VarDepocito;            
         }
     }
 }

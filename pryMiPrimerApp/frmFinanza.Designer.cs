@@ -31,20 +31,22 @@ namespace pryMiPrimerApp
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmFinanzas));
             this.mrcIngresos = new System.Windows.Forms.GroupBox();
-            this.texdeposito = new System.Windows.Forms.TextBox();
+            this.txtdeposito = new System.Windows.Forms.TextBox();
             this.lblDeposito = new System.Windows.Forms.Label();
             this.mrcGastosFijos = new System.Windows.Forms.GroupBox();
             this.lblComida = new System.Windows.Forms.Label();
-            this.textComida = new System.Windows.Forms.TextBox();
-            this.textImpuestos = new System.Windows.Forms.TextBox();
+            this.txttComida = new System.Windows.Forms.TextBox();
+            this.txttImpuestos = new System.Windows.Forms.TextBox();
             this.lblImpuestos = new System.Windows.Forms.Label();
-            this.texAlquleres = new System.Windows.Forms.TextBox();
+            this.txtAlquleres = new System.Windows.Forms.TextBox();
             this.lblAlquileres = new System.Windows.Forms.Label();
             this.mrcGastosVariados = new System.Windows.Forms.GroupBox();
             this.txtSalida = new System.Windows.Forms.TextBox();
             this.lblSalida = new System.Windows.Forms.Label();
             this.cmdCancelar = new System.Windows.Forms.Button();
             this.cmdAceptar = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lblResultado = new System.Windows.Forms.Label();
             this.mrcIngresos.SuspendLayout();
             this.mrcGastosFijos.SuspendLayout();
             this.mrcGastosVariados.SuspendLayout();
@@ -53,7 +55,7 @@ namespace pryMiPrimerApp
             // mrcIngresos
             // 
             this.mrcIngresos.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.mrcIngresos.Controls.Add(this.texdeposito);
+            this.mrcIngresos.Controls.Add(this.txtdeposito);
             this.mrcIngresos.Controls.Add(this.lblDeposito);
             this.mrcIngresos.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mrcIngresos.ForeColor = System.Drawing.SystemColors.MenuHighlight;
@@ -65,12 +67,12 @@ namespace pryMiPrimerApp
             this.mrcIngresos.Text = "ingresos";
             this.mrcIngresos.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // texdeposito
+            // txtdeposito
             // 
-            this.texdeposito.Location = new System.Drawing.Point(132, 44);
-            this.texdeposito.Name = "texdeposito";
-            this.texdeposito.Size = new System.Drawing.Size(100, 29);
-            this.texdeposito.TabIndex = 1;
+            this.txtdeposito.Location = new System.Drawing.Point(132, 44);
+            this.txtdeposito.Name = "txtdeposito";
+            this.txtdeposito.Size = new System.Drawing.Size(100, 29);
+            this.txtdeposito.TabIndex = 1;
             // 
             // lblDeposito
             // 
@@ -86,10 +88,10 @@ namespace pryMiPrimerApp
             // mrcGastosFijos
             // 
             this.mrcGastosFijos.Controls.Add(this.lblComida);
-            this.mrcGastosFijos.Controls.Add(this.textComida);
-            this.mrcGastosFijos.Controls.Add(this.textImpuestos);
+            this.mrcGastosFijos.Controls.Add(this.txttComida);
+            this.mrcGastosFijos.Controls.Add(this.txttImpuestos);
             this.mrcGastosFijos.Controls.Add(this.lblImpuestos);
-            this.mrcGastosFijos.Controls.Add(this.texAlquleres);
+            this.mrcGastosFijos.Controls.Add(this.txtAlquleres);
             this.mrcGastosFijos.Controls.Add(this.lblAlquileres);
             this.mrcGastosFijos.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mrcGastosFijos.ForeColor = System.Drawing.SystemColors.Highlight;
@@ -112,19 +114,19 @@ namespace pryMiPrimerApp
             this.lblComida.Text = "comida";
             this.lblComida.Click += new System.EventHandler(this.label4_Click);
             // 
-            // textComida
+            // txttComida
             // 
-            this.textComida.Location = new System.Drawing.Point(132, 125);
-            this.textComida.Name = "textComida";
-            this.textComida.Size = new System.Drawing.Size(100, 29);
-            this.textComida.TabIndex = 4;
+            this.txttComida.Location = new System.Drawing.Point(132, 125);
+            this.txttComida.Name = "txttComida";
+            this.txttComida.Size = new System.Drawing.Size(100, 29);
+            this.txttComida.TabIndex = 4;
             // 
-            // textImpuestos
+            // txttImpuestos
             // 
-            this.textImpuestos.Location = new System.Drawing.Point(132, 79);
-            this.textImpuestos.Name = "textImpuestos";
-            this.textImpuestos.Size = new System.Drawing.Size(100, 29);
-            this.textImpuestos.TabIndex = 3;
+            this.txttImpuestos.Location = new System.Drawing.Point(132, 79);
+            this.txttImpuestos.Name = "txttImpuestos";
+            this.txttImpuestos.Size = new System.Drawing.Size(100, 29);
+            this.txttImpuestos.TabIndex = 3;
             // 
             // lblImpuestos
             // 
@@ -138,12 +140,12 @@ namespace pryMiPrimerApp
             this.lblImpuestos.Text = "Impuestos ";
             this.lblImpuestos.Click += new System.EventHandler(this.label3_Click);
             // 
-            // texAlquleres
+            // txtAlquleres
             // 
-            this.texAlquleres.Location = new System.Drawing.Point(132, 30);
-            this.texAlquleres.Name = "texAlquleres";
-            this.texAlquleres.Size = new System.Drawing.Size(100, 29);
-            this.texAlquleres.TabIndex = 1;
+            this.txtAlquleres.Location = new System.Drawing.Point(132, 30);
+            this.txtAlquleres.Name = "txtAlquleres";
+            this.txtAlquleres.Size = new System.Drawing.Size(100, 29);
+            this.txtAlquleres.TabIndex = 1;
             // 
             // lblAlquileres
             // 
@@ -208,12 +210,33 @@ namespace pryMiPrimerApp
             this.cmdAceptar.TabIndex = 9;
             this.cmdAceptar.Text = "Aceptar";
             this.cmdAceptar.UseVisualStyleBackColor = false;
+            this.cmdAceptar.Click += new System.EventHandler(this.cmdAceptar_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "label1";
+            // 
+            // lblResultado
+            // 
+            this.lblResultado.AutoSize = true;
+            this.lblResultado.Location = new System.Drawing.Point(21, 377);
+            this.lblResultado.Name = "lblResultado";
+            this.lblResultado.Size = new System.Drawing.Size(35, 13);
+            this.lblResultado.TabIndex = 11;
+            this.lblResultado.Text = "label2";
             // 
             // frmFinanzas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(276, 455);
+            this.Controls.Add(this.lblResultado);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.cmdAceptar);
             this.Controls.Add(this.cmdCancelar);
             this.Controls.Add(this.mrcGastosVariados);
@@ -230,25 +253,28 @@ namespace pryMiPrimerApp
             this.mrcGastosVariados.ResumeLayout(false);
             this.mrcGastosVariados.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
         private System.Windows.Forms.GroupBox mrcIngresos;
         private System.Windows.Forms.Label lblDeposito;
-        private System.Windows.Forms.TextBox texdeposito;
+        private System.Windows.Forms.TextBox txtdeposito;
         private System.Windows.Forms.GroupBox mrcGastosFijos;
-        private System.Windows.Forms.TextBox textImpuestos;
+        private System.Windows.Forms.TextBox txttImpuestos;
         private System.Windows.Forms.Label lblImpuestos;
-        private System.Windows.Forms.TextBox texAlquleres;
+        private System.Windows.Forms.TextBox txtAlquleres;
         private System.Windows.Forms.Label lblAlquileres;
         private System.Windows.Forms.Label lblComida;
-        private System.Windows.Forms.TextBox textComida;
+        private System.Windows.Forms.TextBox txttComida;
         private System.Windows.Forms.GroupBox mrcGastosVariados;
         private System.Windows.Forms.Label lblSalida;
         private System.Windows.Forms.TextBox txtSalida;
         private System.Windows.Forms.Button cmdCancelar;
         private System.Windows.Forms.Button cmdAceptar;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblResultado;
     }
 }
 
