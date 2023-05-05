@@ -202,6 +202,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmAlacena";
             this.Text = "frmAlacena";
+            this.Load += new System.EventHandler(this.frmAlacena_Load);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.mrcCategoria.ResumeLayout(false);
             this.mrcCategoria.PerformLayout();

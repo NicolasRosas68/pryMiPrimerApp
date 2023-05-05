@@ -21,5 +21,11 @@ namespace pryMiPrimerApp
         {
 
         }
+
+        private void frmAlacena_Load(object sender, EventArgs e)
+        {
+          
+
+        }
     }
 }
