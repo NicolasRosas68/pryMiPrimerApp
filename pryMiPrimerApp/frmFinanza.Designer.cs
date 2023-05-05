@@ -45,6 +45,7 @@ namespace pryMiPrimerApp
             this.lblDeposito = new System.Windows.Forms.Label();
             this.txtdeposito = new System.Windows.Forms.TextBox();
             this.mrcIngresos = new System.Windows.Forms.GroupBox();
+            this.txtresultado = new System.Windows.Forms.Label();
             this.mrcGastosVariados.SuspendLayout();
             this.mrcGastosFijos.SuspendLayout();
             this.mrcIngresos.SuspendLayout();
@@ -210,11 +211,21 @@ namespace pryMiPrimerApp
             this.mrcIngresos.Text = "ingresos";
             this.mrcIngresos.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
+            // txtresultado
+            // 
+            this.txtresultado.AutoSize = true;
+            this.txtresultado.Location = new System.Drawing.Point(168, 377);
+            this.txtresultado.Name = "txtresultado";
+            this.txtresultado.Size = new System.Drawing.Size(50, 13);
+            this.txtresultado.TabIndex = 2;
+            this.txtresultado.Text = "resultado";
+            // 
             // frmFinanzas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(276, 455);
+            this.Controls.Add(this.txtresultado);
             this.Controls.Add(this.cmdAceptar);
             this.Controls.Add(this.cmdCancelar);
             this.Controls.Add(this.mrcGastosVariados);
@@ -231,6 +242,7 @@ namespace pryMiPrimerApp
             this.mrcIngresos.ResumeLayout(false);
             this.mrcIngresos.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -251,6 +263,7 @@ namespace pryMiPrimerApp
         private System.Windows.Forms.Label lblDeposito;
         private System.Windows.Forms.TextBox txtdeposito;
         private System.Windows.Forms.GroupBox mrcIngresos;
+        private System.Windows.Forms.Label txtresultado;
     }
 }
 

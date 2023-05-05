@@ -77,6 +77,8 @@ namespace pryMiPrimerApp
 
             Varsalida = VarDepocito - (Varcomida + Varimpuestos + VArAlquileres);
 
+            txtresultado.Text=Varsalida.ToString();
+
             //conectar - unir texto 
 
            
