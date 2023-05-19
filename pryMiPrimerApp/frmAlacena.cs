@@ -27,5 +27,10 @@ namespace pryMiPrimerApp
           
 
         }
+
+        private void cmdGuardar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

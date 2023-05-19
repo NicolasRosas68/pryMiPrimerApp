@@ -152,12 +152,13 @@
             // 
             this.cmdGuardar.BackColor = System.Drawing.Color.White;
             this.cmdGuardar.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdGuardar.Location = new System.Drawing.Point(121, 314);
+            this.cmdGuardar.Location = new System.Drawing.Point(137, 314);
             this.cmdGuardar.Name = "cmdGuardar";
             this.cmdGuardar.Size = new System.Drawing.Size(89, 33);
             this.cmdGuardar.TabIndex = 8;
             this.cmdGuardar.Text = "Guardar";
             this.cmdGuardar.UseVisualStyleBackColor = false;
+            this.cmdGuardar.Click += new System.EventHandler(this.cmdGuardar_Click);
             // 
             // cmdBorrar
             // 
